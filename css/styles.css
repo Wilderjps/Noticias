@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --azul: #24648c;
+    --negro: #28292B;
+    --degradado:linear-gradient(90deg, var(--azul), var(--negro));
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--negro);
+    color: white;
+}
+
+html{
+    font-size: 62.4%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #f9f9f9;
+}
+
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: var(--negro);
+}
+
+header .logo span{
+    color: var(--azul);
+}
+
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--azul);
+}
+
+header .navbar a:hover{
+    color: var(--negro);
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color: var(--azul);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/barra-azul\ superior\ inicio.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.inicio .image img{    
+    width: 40vw;
+}
+
+.inicio .content h3{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+
+}
+
+.inicio .content P{
+    font-size: 2rem;
+    text-align: center;
+    color: whitesmoke;
+    padding: 1rem 0;
+
+}
+
+.nacionales .heading{
+    font-size: 5rem;
+    text-align: center;
+    color: var(--azul);
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+
+}
+
+.nacionales img{    
+    width: 30px;
+}
+
+.nacionales .caja h3{
+    font-size: 2.5rem;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+    
+}
+
+.nacionales .caja P{
+    font-size: 2rem;
+    text-align: justify;
+    color: black;
+    padding: 1rem 0;
+
+}
+
+.deportes .heading{
+    font-size: 5rem;
+    text-align: center;
+    color: #f9f9f9;
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+
+}
+
+.deportes .caja h3{
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);    
+}
+
+.deportes .caja .imge{
+    text-align: center;
+}
+
+.deportes .caja P{
+    font-size: 2rem;
+    text-align: justify;
+    color: #f9f9f9;
+    padding: 1rem 0;
+}
+
+.sucesos .heading{
+    font-size: 5rem;
+    text-align: center;
+    color: var(--azul);
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.sucesos .caja h3{
+    font-size: 2.5rem;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);    
+}
+
+.sucesos .caja .imge{    
+    width: 500px;
+    height: 400px;
+    float: center;
+    margin-left: 30%;
+}
+
+.sucesos .caja P{
+    font-size: 2rem;
+    text-align: justify;
+    color: black;
+    padding: 1rem 0;
+}
+
+.salud{
+    background: url(../img/salud3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.deportes{
+    background-color: #24648c ;
+}
+
+
+.salud .heading{
+    font-size: 5rem;
+    text-align: center;
+    color: var(--azul);
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+
+}
+
+.salud .caja h3{
+    font-size: 2.5rem;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);    
+}
+
+.salud .caja P{
+    font-size: 2rem;
+    text-align: justify;
+    color: black;
+    padding: 1rem 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--degradado);
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.contactos h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--azul);
+    text-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.contactos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+
+}
+
+.contactos .image{
+    flex: 1 1 40rem;
+}
+
+.contactos .image img{
+    width: 100%;
+    padding: 2rem;
+}
+
+.contactos form{
+    flex: 1 1 40rem;
+    padding: 2rem 3rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    background: white;
+}
+
+.contactos .heading{
+    text-align: left;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+
+.contactos form .inputcaja{
+    position: relative;
+}
+
+.contactos form .inputcaja input, .contactos form .inputcaja textarea{
+    width: 100%;
+    background: none;
+    color: #333;
+    margin: 1.5rem 0;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+    text-transform: none;
+}
+
+.contactos form .inputcaja textarea{
+    resize: none;
+    height: 13rem;
+}
+
+.contactos form .inputcaja label{
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    font-size: 1.7rem;
+    color: #666;
+    transition: .2s linear;
+}
+
+.contactos form .inputcaja input:focus ~ label,
+.contactos form .inputcaja input:valid ~ label,
+.contactos form .inputcaja textarea:focus ~label,
+.contactos form .inputcaja textarea:valid ~ label{
+    top: .5rem;
+    font-size: 1.5rem;
+    color: var(--azul);
+}
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+
+@media(max-width:768px){
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+
+    header input:checked ~ .navbar{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    header input:checked ~ label::before{
+        content: '\f00d';
+    }
+    
+}
+
+@media(max-width:1100px){
+    .inicio{
+        flex-flow: column-reverse;
+    }
+
+    .inicio .image img{
+        width: 100%;
+    }
+
+    .inicio .content h3{
+        font-size: 3.6rem;
+    }
+
+    .inicio .content p{
+        font-size: 1.5rem;
+    }
+
+    .sucesos .caja .imge{    
+        width: 300px;
+        height: 200px;
+        float: center;
+        margin-left: 5%;
+    }
+
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 49%;
+    }
+}
